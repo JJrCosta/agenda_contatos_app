@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+body {
+    background-color: #BEFFE4;
+}
+
+.bg-container {
+    background: url('../img/background_desktop.png') no-repeat bottom center fixed;
+    background-size: cover;
+    height: 100vh;
+}
+
+.container {
+    width: 70%;
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+.header {
+    background-color: #409100;
+    color: #fff;
+}
+
+.header .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header .logo {
+    max-width: 50px;
+    margin-right: 30px;
+}
+
+.main .container {
+    height: calc(100vh - 50px);
+    background-color: rgba(255, 255, 255, 0.2);
+}
