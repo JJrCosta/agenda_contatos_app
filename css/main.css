@@ -4,7 +4,9 @@
     box-sizing: border-box;
     font-family: 'Josefin Sans', sans-serif;
 }
-
+/*
+--- BODY & CONTAINERS
+*/
 body {
     background-color: #BEFFE4;
 }
@@ -20,24 +22,140 @@ body {
     max-width: 1024px;
     margin: 0 auto;
 }
-
+/*
+--- HEADER
+*/
 .header {
     background-color: #409100;
-    color: #fff;
 }
 
 .header .container {
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 5px 0;
 }
 
 .header .logo {
-    max-width: 50px;
+    max-width: 38px;
     margin-right: 30px;
 }
 
+.header .container h1 {
+    font-size: 26px;
+    font-weight: 600;
+    color: #fff;
+}
+/*
+--- MAIN & FORM
+*/
 .main .container {
-    height: calc(100vh - 50px);
-    background-color: rgba(255, 255, 255, 0.2);
+    height: 550px;
+    margin-top: 20px;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    backdrop-filter: blur(10px);
+    padding: 5px;
+}
+
+.main .container h2 {
+    padding: 20px 0;
+    text-align: center;
+    color: #409100;
+    text-shadow: 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+.form-add {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+}
+
+.form-add * {
+    height: 38px;
+    margin-bottom: 10px;
+    border-radius: 3px;
+    border: 1px solid #409100;
+    font-size: 18px;
+}
+
+.form-add input#nome-contato {
+    width: 98%;
+}
+
+.form-add input {
+    padding-left: 10px;
+}
+
+.form-add input#phone,
+.form-add button#btn-add  {
+    width: 48.3%;
+}
+
+.form-add button#btn-add {
+    border: none;
+    background-color: #409100;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    text-shadow: 1px 1px rgba(0, 0, 0, 0.5);
+}
+.form-add button#btn-add:hover {
+    background-color: #00854d;
+    transition: 500px;
+}
+/*
+--- TABLE
+*/
+.table-container {
+    margin: 20px auto 0 auto;
+    background-color: rgba(255, 255, 255,0.3);
+    width: 97%;
+    border-radius: 5px;
+    border: 1px solid #409100;
+    padding: 10px;
+}
+
+.table-container table {
+    width: 100%;
+    text-align: center;
+    border-collapse: collapse;
+}
+.table-container table th,
+.table-container table td {
+    border-bottom: 1px solid #409100;
+}
+
+.table-container table th {
+    font-size: 20px;
+    border-bottom: 2px solid #009172;
+}
+
+.table-container table td {
+    font-size: 18px;
+}
+
+.table-container table img {
+    width: 42px;
+    vertical-align: middle;
+    margin: 5px 0;
+}
+.table-container table img:hover {
+    transform: scale(1.1);
+    transition: 300ms;
+}
+/*
+--- RESPONSIVENESS
+*/
+@media (max-width: 769px) {
+    .container {
+        width: 98%;
+        margin: 0 auto;
+    }
+    .header .container h1 {
+        font-size: 22px;
+    }
 }
