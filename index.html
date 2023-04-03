@@ -27,9 +27,9 @@
 
                 <div class="form-container">
                     <h2>Adicionar novo contato</h2>
-                    <form class="form-add">
-                        <input type="text" id="nome-contato" placeholder="Informe o nome" required>
-                        <input type="tel" id="phone" required placeholder="Informe o telefone">
+                    <form class="form-add" id="form">
+                        <input type="text" id="nome-contato" placeholder="Nome do contato" required>
+                        <input type="tel" id="phone" pattern="[0-9]{2} [0-9]{5} [0-9]{4}" required placeholder="12 12345 1234">
                         <button type="submit" id="btn-add">Adicionar +</button>
                     </form>
                 </div><!-- END form-container -->
@@ -44,12 +44,8 @@
                                 <th></th>
                             </tr>
                         </thead>
-                        <tbody>
-                            <tr>
-                                <td>Junior Costa</td>
-                                <td>(12) 99254-4316</td>
-                                <td><a href="tel: "><img src="./img/btn-icon.png" alt="Chamar" title="Chamar"></a></td>
-                            </tr>
+                        <tbody id="tabela">
+                            
                         </tbody>
                     </table>
                 </div><!-- END table-container -->

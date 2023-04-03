@@ -124,6 +124,7 @@ body {
     text-align: center;
     border-collapse: collapse;
 }
+
 .table-container table th,
 .table-container table td {
     border-bottom: 1px solid #409100;
@@ -143,6 +144,7 @@ body {
     vertical-align: middle;
     margin: 5px 0;
 }
+
 .table-container table img:hover {
     transform: scale(1.1);
     transition: 300ms;
