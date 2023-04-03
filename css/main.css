@@ -14,6 +14,7 @@ body {
 .bg-container {
     background: url('../img/background_desktop.png') no-repeat bottom center fixed;
     background-size: cover;
+    min-height: 100vh;
 }
 
 .container {
